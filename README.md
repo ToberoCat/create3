@@ -26,27 +26,19 @@ cmake -Bbuild
 cmake --build build
 ```
 
-### Building the Client Locally
-
-When building locally, run `build.sh`. This will build the project and produce a .deb file, for later installation.
-Optionally you can also run this:
-
-
-### Building the Client with Docker (Recommended)
+### Building the Client with Docker
 
 When building with Docker, run `build_docker.sh`. This will build the project using a docker container, where all
 dependencies are installed and produce a .deb file, for later installation.
-Recommended, because this will also 'cross-compile' the project for the arm64 architecture, which is the architecture of
-the KIPR Wombat.
+
+This will also 'cross-compile' the project for the arm64 architecture, which is the architecture of the KIPR Wombat.
 
 The built binary will be placed in the `binaries` directory.
 
 ### Building the Server with Docker
 
-The [creat3_docker](https://github.com/kipr/create3_docker) repository contains the instructions for building the server
+The [create3_docker](https://github.com/kipr/create3_docker) repository contains the instructions for building the server
 into a wombat compatible docker image.
-
-The build script needs minor adjustments 
 
 #### Customizing the Docker Build
 
